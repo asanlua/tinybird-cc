@@ -1,0 +1,10 @@
+TOKEN "my_endpoint_endpoint_read_2868" READ
+
+NODE endpoint
+SQL >
+
+    SELECT hour, countMerge(counter) FROM mv_pipe_node_mv
+    group by hour
+
+
+
