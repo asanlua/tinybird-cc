@@ -5,6 +5,7 @@ SQL >
 
     SELECT hour, countMerge(counter) FROM mv_pipe_node_mv
     group by hour
+    order by hour desc
 
 
 
